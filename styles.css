@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #4a3a8d;
+    background-color: #16364d;
     margin: 0;
 }
 
@@ -116,11 +116,9 @@ h1 {
 .about-container {
     display: flex;
     justify-content: space-between;
-    /* Space between the two images */
     align-items: center;
     padding: 20px;
     gap: 20px;
-    /* Adjust the spacing between the images */
 }
 
 .relatedImage img,
@@ -133,9 +131,58 @@ h1 {
 .relatedImage,
 .aboutImage {
     flex: 1;
-    /* Each image takes equal space */
     max-width: 48%;
-    /* Ensure the images don't take more than half the width each */
+}
+.headingabout{
+    margin-top: 160px;
+    margin-bottom: 60px;
+}
+.headingskill{
+
+text-align: center;
+color: #f0f0f0;
+margin-top: 160px;
+margin-bottom: 60px;
+
+
+}
+.technical-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.techimage img {
+    max-width: 68%;
+    height: auto;
+}
+
+.softskills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    margin: 60px;
+}
+
+.softskill-box {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.softskill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -211,4 +258,19 @@ h1 {
 
 .skill:nth-child(8) {
     transform: rotate(315deg) translate(140px) rotate(-315deg);
+}
+#home {
+    background-color: #4a3a8d;
+    color: white;
+}
+
+#about {
+    background-color: #2c3e50;  
+    color: black;
+}
+
+
+#skills {
+    background-color: #2c3e50;
+    color: white;
 }
